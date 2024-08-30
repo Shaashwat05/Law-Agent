@@ -45,9 +45,3 @@ $ streamlit run app.py
 
 ![Model Training](https://github.com/Shaashwat05/Law-Agent/blob/main/resources/example.png)
 
-
-### prediction - prediciting trait value and analyzing the predictions 
-
-### milkweed_clustering - Clustering Milkweed Images 
-
-### plant_trait_EDA - Data Analysis on the complete data 
