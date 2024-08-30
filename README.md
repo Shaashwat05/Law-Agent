@@ -45,13 +45,6 @@ $ streamlit run app.py
 
 ![Model Training](https://github.com/Shaashwat05/Law-Agent/blob/main/resources/example.png)
 
-## File Descriptions
-
-### data_handling - Downloading Images based on traits 
-
-### model_from_directory - loading data and trainingthe model 
-
-### segmenting_data - segmenting the download images for training 
 
 ### prediction - prediciting trait value and analyzing the predictions 
 
