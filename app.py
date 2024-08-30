@@ -8,7 +8,8 @@ from streamlit_extras.stylable_container import stylable_container
 
 # Setting page title and header
 st.set_page_config(page_title="AVA", page_icon=":robot_face:")
-st.markdown("<h1 style='text-align: center;'> An Adaptive RAG system for lawyers</h1>", unsafe_allow_html=True) 
+st.markdown("<h1 style='text-align: center;'> An Adaptive RAG system for lawyers</h1>", unsafe_allow_html=True)
+
 
 # Initialise session state variables
 if 'generated' not in st.session_state:
@@ -32,7 +33,6 @@ if 'total_cost' not in st.session_state:
 # Initialize VDB
 retriever = vdb()
 app = create_workflow(retriever)
-
 
 # generate a response
 def generate_response(prompt):
