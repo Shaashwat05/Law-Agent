@@ -7,9 +7,8 @@ import os
 from streamlit_extras.stylable_container import stylable_container 
 
 # Setting page title and header
-#st.set_page_config(page_title="", page_icon=":robot_face:")
+st.set_page_config(page_title="LAW", page_icon=":robot_face:")
 st.markdown("<h1 style='text-align: center;'> An Adaptive RAG system for lawyers</h1>", unsafe_allow_html=True)
-
 
 # Initialise session state variables
 if 'generated' not in st.session_state:
