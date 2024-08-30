@@ -9,3 +9,4 @@ streamlit==1.34.0
 streamlit-chat==0.1.1
 streamlit-extras==0.4.2
 typing_extensions==4.11.0
+chromadb==0.5.5
