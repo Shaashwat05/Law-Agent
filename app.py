@@ -5,6 +5,9 @@ from generate_vdb import vdb
 from workflow import create_workflow
 import os
 from streamlit_extras.stylable_container import stylable_container 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # Setting page title and header
 st.set_page_config(page_title="LAW", page_icon=":robot_face:")
