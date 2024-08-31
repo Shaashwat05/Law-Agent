@@ -11,7 +11,6 @@ def vdb():
     # Docs to index
     urls = [
         "https://www.justice.gov/crt/statutes-enforced-criminal-section",
-        "https://www.govinfo.gov/content/pkg/USCODE-2009-title18/html/USCODE-2009-title18.htm",
         "https://www.justice.gov/sites/default/files/ag/legacy/2014/03/12/apr2013-section1.pdf",
     ]
 
