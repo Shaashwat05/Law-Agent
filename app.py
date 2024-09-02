@@ -30,11 +30,11 @@ if 'total_tokens' not in st.session_state:
     st.session_state['total_tokens'] = []
 if 'total_cost' not in st.session_state:
     st.session_state['total_cost'] = 0.0
+if 'retriever' not in st.session_state:
+    st.session_state['retriever'] = vdb()
+if 'app' not in st.session_state:
+    st.session_state['app'] = create_workflow(st.session_state['retriever'])
 
-
-# Initialize VDB
-retriever = vdb()
-app = create_workflow(retriever)
 
 # generate a response
 def generate_response(prompt):
@@ -42,7 +42,7 @@ def generate_response(prompt):
     st.session_state['messages'].append({"role": "user", "content": prompt})
 
     inputs = {"question": prompt}
-    for output in app.stream(inputs):
+    for output in st.session_state['app'].stream(inputs):
         for key, value in output.items():
             # Node
             print(f"Node '{key}':")
