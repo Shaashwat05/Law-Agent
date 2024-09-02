@@ -4,7 +4,7 @@ from streamlit_chat import message
 
 __import__('pysqlite3')
 import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3-binary')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 from generate_vdb import vdb
 from workflow import create_workflow
